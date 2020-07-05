@@ -1,18 +1,85 @@
-body {
-    background-color: rgba(15,39,194,1);
+* {
+    box-sizing: border-box;
 }
 
-#intro {
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: rgba(15,39,194,1);
+    margin: 0em;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    padding: 8px;
+}
+
+.logo {
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.logo a {
+    color: white;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    margin-top: 30px;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 48px;
+}
+
+nav ul li:last-child {
+    margin-right: 100px;
+}
+
+nav ul li a {
+    display: inline-block;
+    outline: none;
+    color: white;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 200;
+}
+
+.intro {
     position: absolute;
 	left: 140px;
 	top: 81px;
 	overflow: visible;
-	width: 564px;
+	width: 364px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
-	color: rgba(255,255,255,1);
+    color: rgba(255,255,255,1);
 }
