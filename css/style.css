@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(15,39,194,1);
+}
+
+#intro {
+    position: absolute;
+	left: 140px;
+	top: 81px;
+	overflow: visible;
+	width: 564px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+}
