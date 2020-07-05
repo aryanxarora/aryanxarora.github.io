@@ -19,6 +19,7 @@ body {
     font-weight: 400;
     background-position: center;
     background-size: cover;
+    color: white;
 }
 
 nav {
@@ -204,3 +205,11 @@ nav ul li a {
     display: none;
 }
 
+.intro {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.intro h1 {
+    font-weight: 550;
+}
