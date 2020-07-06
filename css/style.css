@@ -167,6 +167,7 @@ nav ul li a {
     .nav-btn i:nth-child(3) {
           margin-top: 4px;
     }
+
 }
 
 #nav:checked + .nav-btn {
