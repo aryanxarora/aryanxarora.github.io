@@ -4,9 +4,6 @@ body , html{
     background-color: #0F27C2;
     color: white;
     font-family: Helvetica, Arial, sans-serif;
-    height: 100%;
-    background: url('/css/images/bg.png') no-repeat;
-    background-size: cover;
 }
 
 .background {
@@ -78,12 +75,6 @@ nav ul li a {
 
 @media screen and (max-width: 864px) {
 
-    body, html {
-        background: url('/css/images/iphone-bg@2x.png') no-repeat;
-        background-size: cover;
-        background-position: ;
-    }
-
     .top {
         margin: 45px;
         height: 89vh;
@@ -118,7 +109,6 @@ nav ul li a {
 
     .content {
         bottom: 110px;
-        display: none;
     }
 
     .content ul {
@@ -129,9 +119,4 @@ nav ul li a {
         font-size: 40px;
     }
 
-
-}
-
-.bottom {
-    margin-top: 500px;
 }
