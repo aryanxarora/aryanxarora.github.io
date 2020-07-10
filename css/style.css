@@ -1,9 +1,12 @@
-body {
+body , html{
     margin: 0;
     padding: 0;
     background-color: #0F27C2;
     color: white;
     font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    background: url('/css/images/bg.png') no-repeat;
+    background-size: cover;
 }
 
 .background {
@@ -102,7 +105,7 @@ nav ul li a {
     }
 
     .top h1 {
-        font-size: 30px;
+        font-size: 20px;
         width: 300px;
         top: 100px;
     }
@@ -116,8 +119,12 @@ nav ul li a {
     }
 
     .content ul li a {
-        font-size: 50px;
+        font-size: 40px;
     }
 
 
+}
+
+.bottom {
+    margin-top: 500px;
 }
