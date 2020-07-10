@@ -8,7 +8,7 @@ body , html{
 
 .top {
     margin: 50px;
-    height: 670px;
+    height: 620px;
     position: relative;
 }
 
@@ -36,6 +36,10 @@ nav ul li a {
     letter-spacing: 1.2px;
 }
 
+nav ul li a:hover {
+    color: red;
+}
+
 .top h1 {
     font-size: x-large;
     position: absolute;
@@ -59,6 +63,12 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 80px;
+}
+
+.content ul li a:hover {
+    margin-left: 50px;
+    transition: 0.2s;
+    text-shadow: 8px 8px black;
 }
 
 .bottom {
