@@ -6,10 +6,6 @@ body , html{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.background {
-    position: relative;
-}
-
 .top {
     margin: 50px;
     height: 670px;
