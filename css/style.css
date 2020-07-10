@@ -78,6 +78,12 @@ nav ul li a {
 
 @media screen and (max-width: 864px) {
 
+    body, html {
+        background: url('/css/images/iphone-bg@2x.png') no-repeat;
+        background-size: cover;
+        background-position: ;
+    }
+
     .top {
         margin: 45px;
         height: 89vh;
@@ -112,6 +118,7 @@ nav ul li a {
 
     .content {
         bottom: 110px;
+        display: none;
     }
 
     .content ul {
