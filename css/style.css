@@ -1,66 +1,66 @@
-body , html{
+body {
     margin: 0;
     padding: 0;
-    background-color: #0F27C2;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-family: Helvetica, Arial, sans-serif;
 }
 
-.top {
-    margin: 50px;
-    height: 620px;
-    position: relative;
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
 }
 
-nav {
-    margin-right: 50px;
+.container img {
     position: absolute;
+    width: 500px;
+    bottom: 0;
     right: 0;
 }
 
-nav ul {
-    float: right;
+nav {
+    position: absolute;
+    margin: 50px;
+    right: 0;
 }
 
 nav ul li {
     display: inline-block;
-    padding: 10px;
-    margin-left: 48px;
+    padding: 30px;
 }
 
 nav ul li a {
-    outline: none;
-    color: white;
     text-decoration: none;
-    font-size: 14px;
+    color: white;
+    outline: none;
     letter-spacing: 1.2px;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: red;
     cursor: e-resize;
 }
 
-nav ul li a:hover {
-    color: red;
-}
-
-.top h1 {
-    font-size: x-large;
+.container h1 {
+    margin: 50px;
     position: absolute;
     width: 300px;
-    cursor: grab;
-}
-
-.top h1:hover {
-    font-size: xx-large;
+    font-size: x-large;
+    top: 30px;
 }
 
 .content {
     position: absolute;
     bottom: 0;
+    left: 0;
+    margin: 50px;
 }
 
 .content ul {
     list-style-type: none;
     display: inline;
-    line-height: 50px;
+    line-height: 60px;
     font-weight: 550;
 }
 
@@ -68,29 +68,27 @@ nav ul li a:hover {
     outline: none;
     color: white;
     text-decoration: none;
-    font-size: 80px;
+    font-size: 100px;
     cursor: help;
 }
 
 .content ul li a:hover {
     margin-left: 50px;
-    transition: 0.2s; 
+    transition: 0.2s;
     text-shadow: 8px 8px black;
 }
 
 .bottom {
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
-    background-color: green;
-    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: black;
 }
 
-@media screen and (max-width: 864px) {
+@media only screen and (max-width: 767px) {
 
-    .top {
-        margin: 45px;
-        height: 89vh;
+    .container img {
+        width: 380px;
     }
 
     nav {
@@ -99,33 +97,29 @@ nav ul li a:hover {
 
     nav ul {
         float: left;
-        line-height: 27px;
         padding: 0;
+        line-height: 27px;
     }
 
     nav ul li {
         display: block;
         margin: 0;
         padding: 0;
-    }
-
-    nav ul li a {
-        font-size: medium;
         font-weight: 100;
     }
 
-    .top h1 {
-        font-size: 20px;
-        width: 300px;
-        top: 100px;
+    .container h1 {
+        top: 130px;
+        font-weight: bold;
     }
 
     .content {
-        bottom: 110px;
+        bottom: 320px;
+        display: none;
     }
 
     .content ul {
-        line-height: 30px;
+        line-height: 25px;
     }
 
     .content ul li a {
@@ -133,3 +127,4 @@ nav ul li a:hover {
     }
 
 }
+
