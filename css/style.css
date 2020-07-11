@@ -90,10 +90,11 @@ nav ul li a:hover{
 @media only screen and (max-width: 767px) {
 
     .container img {
-        width: 380px;
+        width: 350px;
     }
 
     nav {
+        top: 0;
         left: 0;
     }
 
@@ -104,19 +105,19 @@ nav ul li a:hover{
     }
 
     nav ul li {
-        display: block;
         margin: 0;
-        padding: 0;
+        padding: 30px;
+        padding-left: 0;
         font-weight: 100;
     }
 
     .container h1 {
-        top: 130px;
+        top: 90px;
         font-weight: bold;
     }
 
     .content {
-        bottom: 320px;
+        bottom: 370px;
         display: none;
     }
 
@@ -126,6 +127,7 @@ nav ul li a:hover{
 
     .content ul li a {
         font-size: 40px;
+        font-weight: 500;
     }
 
 }
