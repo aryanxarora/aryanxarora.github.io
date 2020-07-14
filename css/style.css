@@ -104,13 +104,23 @@ ion-icon {
     font-family: 'Open Sans';
 }
 
+.bottom h1 {
+    font-size: 28px;
+}
+
 .bottom h3 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .bottom p {
     font-size: 20px;
     text-align: justify;
+}
+
+.bottom ol li {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 0;
 }
 
 .wrapper {
@@ -176,6 +186,10 @@ ion-icon {
         margin: 50px;
     }
 
+    .bottom h1 {
+        font-size: 25px;
+    }
+
     .bottom h3 {
         font-size: 23px;
     }
@@ -184,5 +198,8 @@ ion-icon {
         font-size: 16px;
     }
 
-}
+    .bottom ol li {
+        font-size: 16px;
+    }
 
+}
