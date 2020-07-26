@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
+.mycontainer {
     width: 100%;
     height: 100vh;
     background-color: #0F27C2;
@@ -17,7 +17,7 @@ html {
     background-size: cover;
 }
 
-.container img {
+.mycontainer img {
     position: absolute;
     width: 500px;
     bottom: 0;
@@ -49,22 +49,24 @@ nav ul li a:hover{
     cursor: e-resize;
 }
 
-.container h1 {
+.mycontainer h1 {
     margin: 50px;
     margin-top: 30px;
     position: absolute;
     width: 300px;
     font-size: x-large;
     top: 30px;
+    color: white;
 }
 
-.container h3 {
+.mycontainer h3 {
     font-family: 'Anonymous Pro';
     font-weight: 400;
     position: absolute;
     margin: 50px;
     top: 300px;
     font-size: 70px;
+    color: white;
 }
 
 .typing {
@@ -93,7 +95,7 @@ nav ul li a:hover{
 }
 
 /* THIS IS FOR THE ICONS*/
-.container a {
+.mycontainer a {
     color: white;
 }
 
@@ -140,9 +142,13 @@ ion-icon {
 
 @media only screen and (max-width: 767px) {
 
-    .container img {
+    .mycontainer{
+        height: 90vh;
+    }
+
+    .mycontainer img {
         width: 380px;
-        bottom: 0;
+        bottom: 10vh;
     }
 
     nav {
@@ -163,7 +169,7 @@ ion-icon {
         font-weight: 100;
     }
 
-    .container h1 {
+    .mycontainer h1 {
         top: 110px;
         font-weight: bold;
         width: 250px;
@@ -207,7 +213,7 @@ ion-icon {
         font-size: 16px;
     }
 
-    .container h3, h4 {
+    .mycontainer h3, h4 {
         display: none;
     }
 
