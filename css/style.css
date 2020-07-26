@@ -142,13 +142,15 @@ ion-icon {
 
 @media only screen and (max-width: 767px) {
 
-    .mycontainer{
-        height: 90vh;
+    .mycontainer {
+        background: url('/css/images/mobile-bg.png');
+        background-size: cover;
     }
 
     .mycontainer img {
         width: 380px;
-        bottom: 10vh;
+        bottom: 0;
+        display: none;
     }
 
     nav {
