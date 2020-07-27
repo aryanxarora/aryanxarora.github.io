@@ -50,7 +50,9 @@ db.collection("other-stuff").doc().set({
   console.log(err)
 });
 
+*/
 
+// ? THIS IS TO READ DATA FROM FIRESTORE
 db.collection("other-stuff").get().then(function(snapshot){
   snapshot.forEach(function(doc){
       var otherStuff =  doc.data().text;
@@ -59,4 +61,12 @@ db.collection("other-stuff").get().then(function(snapshot){
   })
 });
 
-*/
+
+// ? THIS IS HOW TO APPEND BULLETS TO LISTS
+function appendToList(whichList, appendThis) {
+  var node = document.createElement("li");
+  var textnode = document.createTextNode(appendThis);
+
+  node.appendChild(textnode);
+  document.getElementById(whichList).appendChild(node);
+}

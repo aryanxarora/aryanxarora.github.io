@@ -19,7 +19,7 @@ html {
 
 .mycontainer img {
     position: absolute;
-    width: 500px;
+    width: 35%;
     bottom: 0;
     right: 0;
 }
@@ -64,7 +64,7 @@ nav ul li a:hover{
     font-weight: 400;
     position: absolute;
     margin: 50px;
-    top: 300px;
+    top: 40%;
     font-size: 70px;
     color: white;
 }
