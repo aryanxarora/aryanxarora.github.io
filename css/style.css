@@ -155,7 +155,7 @@ ion-icon {
     margin-right: 30px;
     margin-top: 40px;
     width: 250px;
-    height: 350px;
+    height: 300px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
@@ -242,6 +242,10 @@ ion-icon {
         margin: 30px;
     }
 
+    .bottom {
+        margin-top: 50px;
+    }
+
     .bottom h1 {
         font-size: 25px;
     }
@@ -260,6 +264,21 @@ ion-icon {
 
     .mycontainer h3, h4 {
         display: none;
+    }
+
+    .cards {
+        display: grid;
+        place-items: center;
+    }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .end {
+        width: 50px;
+        height: 50px;
     }
 
 }
