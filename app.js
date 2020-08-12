@@ -49,7 +49,6 @@ db.collection("other-stuff").doc().set({
 .catch(function (err){
   console.log(err)
 });
-
 */
 
 // ? THIS IS TO READ DATA FROM FIRESTORE
@@ -61,6 +60,12 @@ db.collection("other-stuff").get().then(function(snapshot){
   })
 });
 
+// ? THIS IS HOW YOU INDEX
+db.collection("other-stuff").onSnapshot((snapshot) => {
+  var data = snapshot.docs[1].data();
+  console.log(data)
+});
+
 
 // ? THIS IS HOW TO APPEND BULLETS TO LISTS
 function appendToList(whichList, appendThis) {
@@ -69,4 +74,4 @@ function appendToList(whichList, appendThis) {
 
   node.appendChild(textnode);
   document.getElementById(whichList).appendChild(node);
-}
+};
