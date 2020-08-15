@@ -41,7 +41,10 @@ window.onclick = function(event) {
 function modalSubmit(){
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
-  document.getElementById("myForm").reset();
+  var myForm = document.getElementById("myForm");
+  myForm.addEventListener("click", function(event){
+    event.preventDefault();
+  });
   console.log(email);
 
   firebase.auth().signInWithEmailAndPassword(email, password).then(function(user){
@@ -50,7 +53,6 @@ function modalSubmit(){
     if(user != null){
       console.log(user.email);
     }
-
     modal.style.display = "none"
     btn.style.display = "none";
     var CRUDform = document.getElementById("CRUDform");
